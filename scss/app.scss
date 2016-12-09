@@ -10,6 +10,25 @@
 @import "_helpers.scss";
 @import "_footer.scss";
 
-p {
+body {
+  font-family: $font-family;
+  font-size: 1.35rem;
+}
+
+h1 {
+  color: purple;
+  font-size: 2rem;
+}
+
+.navbar li {
+  padding: 5px;
+  margin: 5px;
+}
+
+.content {
   color: $white;
+}
+
+.navbar {
+  color: tomato;
 }

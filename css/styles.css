@@ -1,4 +1,161 @@
-p {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:root {
+  margin: 0;
+  top: 0;
+  left: 0; }
+
+.south-park-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: green; }
+
+.south-park-tile::after {
+  content: "";
+  background-image: url("../img/spark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1; }
+
+.simpsons-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: yellow; }
+
+.simpsons-tile::after {
+  content: "";
+  background: url("../img/simpsons.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1; }
+
+.futurama-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: tomato; }
+
+.futurama-tile::after {
+  content: "";
+  background: url("../img/futurama.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1; }
+
+.archer-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: #369; }
+
+.archer-tile::after {
+  content: "";
+  background: url("../img/archer.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1; }
+
+.simpsons-inset,
+.spark-inset,
+.archer-inset,
+.futurama-inset {
+  width: 440px;
+  height: 140px;
+  border: 3px solid fuchsia;
+  position: relative;
+  top: 180px;
+  z-index: 999;
+  padding: 10px; }
+
+.spark-inset {
+  top: 0px;
+  background: green; }
+
+.simpsons-inset {
+  background: orange; }
+
+.archer-inset {
+  background: #369; }
+
+.futurama-inset {
+  background-color: tomato; }
+
+body {
+  font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
+  font-size: 1.35rem; }
+
+h1 {
+  color: purple;
+  font-size: 2rem; }
+
+.navbar li {
+  padding: 5px;
+  margin: 5px; }
+
+.content {
   color: #fff; }
+
+.navbar {
+  color: tomato; }
 
 /*# sourceMappingURL=styles.css.map */

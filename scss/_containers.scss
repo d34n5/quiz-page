@@ -1,0 +1,123 @@
+
+.south-park-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: $green;
+}
+
+.south-park-tile::after {
+  content: "";
+  background-image: url("../img/spark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.simpsons-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: $yellow;
+}
+
+.simpsons-tile::after {
+  content: "";
+  background: url("../img/simpsons.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.futurama-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: $red;
+}
+
+.futurama-tile::after {
+  content: "";
+  background: url("../img/futurama.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.archer-tile {
+  width: 480px;
+  height: 360px;
+  display: block;
+  position: relative;
+  padding: 20px;
+  background: $sass-blue;
+}
+
+.archer-tile::after {
+  content: "";
+  background: url("../img/archer.jpg");
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.simpsons-inset,
+.spark-inset,
+.archer-inset,
+.futurama-inset {
+    width: 440px;
+    height: 140px;
+    border: 3px solid fuchsia;
+    position: relative;
+    top: 180px;
+    z-index: 999;
+    padding: 10px;
+}
+
+.spark-inset {
+  top: 0px;
+  background: $green;
+}
+
+.simpsons-inset {
+  background: orange;
+}
+
+.archer-inset {
+  background: $sass-blue;
+}
+
+.futurama-inset {
+  background-color: $red;
+}
