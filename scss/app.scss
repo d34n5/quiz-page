@@ -1,0 +1,15 @@
+@import "libraries/bourbon/_bourbon.scss";
+@import "_reset.scss";
+@import "_config.scss";
+@import "_header.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_layout.scss";
+@import "_containers.scss";
+@import "_components.scss";
+@import "_helpers.scss";
+@import "_footer.scss";
+
+p {
+  color: $white;
+}
