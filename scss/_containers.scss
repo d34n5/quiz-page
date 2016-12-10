@@ -1,13 +1,14 @@
 
+.content {
+  @include clearfix;
+  color: $white;
+  text-shadow: 1px 1px .5px black;
+}
 
 .south-park-tile {
-  width: 480px;
-  height: 360px;
-  display: block;
+  @include tile($green);
   margin: 0 auto;
   position: relative;
-  padding: 20px;
-  background: $green;
   &:hover {
     background: lighten($green, 20%);
   }
@@ -32,13 +33,9 @@
 }
 
 .simpsons-tile {
-  width: 480px;
-  height: 360px;
-  display: block;
+  @include tile($yellow);
   margin: 0 auto;
   position: relative;
-  padding: 20px;
-  background: $yellow;
   &:hover {
     background: lighten($yellow, 30%);
   }
@@ -63,13 +60,9 @@
 }
 
 .futurama-tile {
-  width: 480px;
-  height: 360px;
-  display: block;
+  @include tile (purple);
   margin: 0 auto;
   position: relative;
-  padding: 20px;
-  background: purple;
   &:hover {
     background: lighten(purple, 20%);
   }
@@ -79,28 +72,15 @@
 }
 
 .futurama-tile::after {
-  content: "";
+  @extend .south-park-tile::after;
   background: url("../img/futurama.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;
+  background-size: contain;
 }
 
 .archer-tile {
-  width: 480px;
-  height: 360px;
-  display: block;
+  @include tile($sass-blue);
   margin: 0 auto;
   position: relative;
-  padding: 20px;
-  background: $sass-blue;
   &:hover {
     background: lighten($sass-blue, 20%);
   }
@@ -110,15 +90,9 @@
 }
 
 .archer-tile::after {
+  @extend .south-park-tile::after;
   content: "";
   background: url("../img/archer.jpg");
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;
 }
 
 .simpsons-inset,
@@ -154,9 +128,4 @@
 .score, .likes {
   display: inline-block;
   margin: 20px;
-}
-
-.content {
-  color: $white;
-  margin: 0 auto;
 }

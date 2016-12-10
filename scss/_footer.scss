@@ -1,19 +1,21 @@
 footer {
+  @include border-bottom-radius(10px);
   background: $black;
   color: lightblue;
-  padding: 20px;
+  padding: 10px 25px;
   width: 480px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 3px;
   @media screen and (min-width: 1000px) {
+    @include clearfix;
     width: 960px;
+    margin: 0;
+    left: 0;
   }
   #copyright {
-    margin-top: 10px;
     @media screen and (min-width: 1000px) {
       display: inline-block;
-      padding-top: 15px;
-
     }
   }
 }

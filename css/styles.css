@@ -31,16 +31,18 @@ time, mark, audio, video {
   left: 0; }
 
 body {
+  background-color: yellow;
+  background-image: -webkit-linear-gradient(-585deg, yellow, lavender);
+  background-image: linear-gradient(315deg,yellow, lavender);
   font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
-  min-width: 500px;
-  background: lavender; }
+  min-width: 500px; }
 
 h1 {
   color: purple;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow: 3px 2px 1px white;
   padding: 5px;
-  margin: 5px;
-  margin-left: 3rem; }
+  margin: 5px; }
 
 h2 {
   font-size: 1.5rem; }
@@ -48,27 +50,23 @@ h2 {
 h5 {
   font-size: 1rem; }
 
-header {
-  text-align: center; }
-
 .navbar {
   color: tomato;
   max-width: 480px;
   margin: 0 auto;
   padding: 5px; }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 960px) {
     .navbar {
       border-radius: 5px;
       padding: 15px;
       margin: 10px 15px;
-      max-width: 1000px; } }
+      max-width: 960px; } }
 
 .navbar li {
   padding: 5px;
   margin: 5px 90px;
-  text-align: center;
   max-width: 250px; }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 420px) {
     .navbar li {
       display: inline-block;
       background: #000;
@@ -86,21 +84,29 @@ header {
   display: inline-block;
   padding: 15px; }
 
+.content {
+  color: #fff;
+  text-shadow: 1px 1px .5px black; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .south-park-tile {
-  width: 480px;
+  background-color: green;
   height: 360px;
+  width: 480px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  position: relative;
-  padding: 20px;
-  background: green; }
+  position: relative; }
   .south-park-tile:hover {
     background: #00e600; }
   @media screen and (min-width: 1000px) {
     .south-park-tile {
       float: left; } }
 
-.south-park-tile::after {
+.south-park-tile::after, .futurama-tile::after, .archer-tile::after {
   content: "";
   background-image: url("../img/spark.jpg");
   background-size: cover;
@@ -115,13 +121,13 @@ header {
   z-index: 1; }
 
 .simpsons-tile {
-  width: 480px;
+  background-color: yellow;
   height: 360px;
+  width: 480px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  position: relative;
-  padding: 20px;
-  background: yellow; }
+  position: relative; }
   .simpsons-tile:hover {
     background: #ffff99; }
   @media screen and (min-width: 1000px) {
@@ -143,13 +149,13 @@ header {
   z-index: 1; }
 
 .futurama-tile {
-  width: 480px;
+  background-color: purple;
   height: 360px;
+  width: 480px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  position: relative;
-  padding: 20px;
-  background: purple; }
+  position: relative; }
   .futurama-tile:hover {
     background: #e600e6; }
   @media screen and (min-width: 1000px) {
@@ -157,27 +163,17 @@ header {
       float: left; } }
 
 .futurama-tile::after {
-  content: "";
   background: url("../img/futurama.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1; }
+  background-size: contain; }
 
 .archer-tile {
-  width: 480px;
+  background-color: #369;
   height: 360px;
+  width: 480px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
-  position: relative;
-  padding: 20px;
-  background: #369; }
+  position: relative; }
   .archer-tile:hover {
     background: #6699cc; }
   @media screen and (min-width: 1000px) {
@@ -186,14 +182,7 @@ header {
 
 .archer-tile::after {
   content: "";
-  background: url("../img/archer.jpg");
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1; }
+  background: url("../img/archer.jpg"); }
 
 .simpsons-inset,
 .spark-inset,
@@ -224,10 +213,6 @@ header {
   display: inline-block;
   margin: 20px; }
 
-.content {
-  color: #fff;
-  margin: 0 auto; }
-
 .button {
   color: white;
   height: 40px;
@@ -242,21 +227,30 @@ header {
     height: 45px;
     width: 90px; }
 
+header, .navbar li {
+  text-align: center; }
+
 footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: #000;
   color: lightblue;
-  padding: 20px;
+  padding: 10px 25px;
   width: 480px;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 3px; }
   @media screen and (min-width: 1000px) {
     footer {
-      width: 960px; } }
-  footer #copyright {
-    margin-top: 10px; }
-    @media screen and (min-width: 1000px) {
-      footer #copyright {
-        display: inline-block;
-        padding-top: 15px; } }
+      width: 960px;
+      margin: 0;
+      left: 0; }
+      footer::after {
+        clear: both;
+        content: "";
+        display: table; } }
+  @media screen and (min-width: 1000px) {
+    footer #copyright {
+      display: inline-block; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,21 +8,22 @@ $sass-blue: #369;
 $green: green;
 $yellow: yellow;
 $red: tomato;
-$background: lavender;
+$background: #eee;
 
 
 body {
+  @include linear-gradient(315deg, yellow, lavender);
   font-family: $font-stack;
   min-width: 500px;
-  background: $background;
+  // background: $background;
 }
 
 h1 {
   color: purple;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow: 3px 2px 1px white;
   padding: 5px;
   margin: 5px;
-  margin-left: 3rem;
 }
 
 h2 {
