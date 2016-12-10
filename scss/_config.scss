@@ -1,5 +1,5 @@
 
-$font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
+$font-stack: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
 
 $white: #fff;
 $black: #000;
@@ -8,10 +8,13 @@ $sass-blue: #369;
 $green: green;
 $yellow: yellow;
 $red: tomato;
+$background: lavender;
 
 
 body {
-  font-family: $font-family;
+  font-family: $font-stack;
+  min-width: 500px;
+  background: $background;
 }
 
 h1 {
@@ -19,6 +22,7 @@ h1 {
   font-size: 2rem;
   padding: 5px;
   margin: 5px;
+  margin-left: 3rem;
 }
 
 h2 {

@@ -3,6 +3,8 @@ footer {
   color: lightblue;
   padding: 20px;
   width: 480px;
+  display: block;
+  margin: 0 auto;
   @media screen and (min-width: 1000px) {
     width: 960px;
   }

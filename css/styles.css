@@ -31,13 +31,16 @@ time, mark, audio, video {
   left: 0; }
 
 body {
-  font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif; }
+  font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
+  min-width: 500px;
+  background: lavender; }
 
 h1 {
   color: purple;
   font-size: 2rem;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  margin-left: 3rem; }
 
 h2 {
   font-size: 1.5rem; }
@@ -45,27 +48,35 @@ h2 {
 h5 {
   font-size: 1rem; }
 
+header {
+  text-align: center; }
+
 .navbar {
   color: tomato;
-  max-width: 480px; }
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 5px; }
   @media screen and (min-width: 1000px) {
     .navbar {
       border-radius: 5px;
-      padding: 10px;
-      margin: 5px 10px;
+      padding: 15px;
+      margin: 10px 15px;
       max-width: 1000px; } }
 
 .navbar li {
   padding: 5px;
-  margin: 5px 25px; }
-  @media screen and (min-width: 600px) {
+  margin: 5px 90px;
+  text-align: center;
+  max-width: 250px; }
+  @media screen and (min-width: 500px) {
     .navbar li {
       display: inline-block;
       background: #000;
       color: white;
       border-radius: 5px;
       padding: 10px;
-      margin: 5px 10px; } }
+      margin: 5px 10px;
+      border: 3px soild #fff; } }
   .navbar li:hover {
     border: 3px solid #000;
     background: #fff;
@@ -79,9 +90,12 @@ h5 {
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: green; }
+  .south-park-tile:hover {
+    background: #00e600; }
   @media screen and (min-width: 1000px) {
     .south-park-tile {
       float: left; } }
@@ -104,9 +118,12 @@ h5 {
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: yellow; }
+  .simpsons-tile:hover {
+    background: #ffff99; }
   @media screen and (min-width: 1000px) {
     .simpsons-tile {
       float: left; } }
@@ -129,9 +146,12 @@ h5 {
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: purple; }
+  .futurama-tile:hover {
+    background: #e600e6; }
   @media screen and (min-width: 1000px) {
     .futurama-tile {
       float: left; } }
@@ -154,9 +174,12 @@ h5 {
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: #369; }
+  .archer-tile:hover {
+    background: #6699cc; }
   @media screen and (min-width: 1000px) {
     .archer-tile {
       float: left; } }
@@ -223,7 +246,9 @@ footer {
   background: #000;
   color: lightblue;
   padding: 20px;
-  width: 480px; }
+  width: 480px;
+  display: block;
+  margin: 0 auto; }
   @media screen and (min-width: 1000px) {
     footer {
       width: 960px; } }

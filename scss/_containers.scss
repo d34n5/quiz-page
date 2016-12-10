@@ -1,11 +1,16 @@
 
+
 .south-park-tile {
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: $green;
+  &:hover {
+    background: lighten($green, 20%);
+  }
   @media screen and (min-width: 1000px) {
     float: left;
   }
@@ -30,9 +35,13 @@
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: $yellow;
+  &:hover {
+    background: lighten($yellow, 30%);
+  }
   @media screen and (min-width: 1000px) {
     float: left;
   }
@@ -57,9 +66,13 @@
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: purple;
+  &:hover {
+    background: lighten(purple, 20%);
+  }
   @media screen and (min-width: 1000px) {
     float: left;
   }
@@ -84,9 +97,13 @@
   width: 480px;
   height: 360px;
   display: block;
+  margin: 0 auto;
   position: relative;
   padding: 20px;
   background: $sass-blue;
+  &:hover {
+    background: lighten($sass-blue, 20%);
+  }
   @media screen and (min-width: 1000px) {
     float: left;
   }
