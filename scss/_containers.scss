@@ -6,6 +6,9 @@
   position: relative;
   padding: 20px;
   background: $green;
+  @media screen and (min-width: 1000px) {
+    float: left;
+  }
 }
 
 .south-park-tile::after {
@@ -30,6 +33,9 @@
   position: relative;
   padding: 20px;
   background: $yellow;
+  @media screen and (min-width: 1000px) {
+    float: left;
+  }
 }
 
 .simpsons-tile::after {
@@ -53,7 +59,10 @@
   display: block;
   position: relative;
   padding: 20px;
-  background: $red;
+  background: purple;
+  @media screen and (min-width: 1000px) {
+    float: left;
+  }
 }
 
 .futurama-tile::after {
@@ -78,6 +87,9 @@
   position: relative;
   padding: 20px;
   background: $sass-blue;
+  @media screen and (min-width: 1000px) {
+    float: left;
+  }
 }
 
 .archer-tile::after {
@@ -98,11 +110,11 @@
 .futurama-inset {
     width: 440px;
     height: 140px;
-    border: 3px solid fuchsia;
+    border: 3px solid $white;
     position: relative;
     top: 180px;
     z-index: 999;
-    padding: 10px;
+    padding: 20px;
 }
 
 .spark-inset {
@@ -119,5 +131,15 @@
 }
 
 .futurama-inset {
-  background-color: $red;
+  background-color: purple;
+}
+
+.score, .likes {
+  display: inline-block;
+  margin: 20px;
+}
+
+.content {
+  color: $white;
+  margin: 0 auto;
 }

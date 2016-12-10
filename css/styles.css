@@ -30,6 +30,51 @@ time, mark, audio, video {
   top: 0;
   left: 0; }
 
+body {
+  font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif; }
+
+h1 {
+  color: purple;
+  font-size: 2rem;
+  padding: 5px;
+  margin: 5px; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1rem; }
+
+.navbar {
+  color: tomato;
+  max-width: 480px; }
+  @media screen and (min-width: 1000px) {
+    .navbar {
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px 10px;
+      max-width: 1000px; } }
+
+.navbar li {
+  padding: 5px;
+  margin: 5px 25px; }
+  @media screen and (min-width: 600px) {
+    .navbar li {
+      display: inline-block;
+      background: #000;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px 10px; } }
+  .navbar li:hover {
+    border: 3px solid #000;
+    background: #fff;
+    color: #000; }
+
+.title {
+  display: inline-block;
+  padding: 15px; }
+
 .south-park-tile {
   width: 480px;
   height: 360px;
@@ -37,6 +82,9 @@ time, mark, audio, video {
   position: relative;
   padding: 20px;
   background: green; }
+  @media screen and (min-width: 1000px) {
+    .south-park-tile {
+      float: left; } }
 
 .south-park-tile::after {
   content: "";
@@ -59,6 +107,9 @@ time, mark, audio, video {
   position: relative;
   padding: 20px;
   background: yellow; }
+  @media screen and (min-width: 1000px) {
+    .simpsons-tile {
+      float: left; } }
 
 .simpsons-tile::after {
   content: "";
@@ -80,7 +131,10 @@ time, mark, audio, video {
   display: block;
   position: relative;
   padding: 20px;
-  background: tomato; }
+  background: purple; }
+  @media screen and (min-width: 1000px) {
+    .futurama-tile {
+      float: left; } }
 
 .futurama-tile::after {
   content: "";
@@ -103,6 +157,9 @@ time, mark, audio, video {
   position: relative;
   padding: 20px;
   background: #369; }
+  @media screen and (min-width: 1000px) {
+    .archer-tile {
+      float: left; } }
 
 .archer-tile::after {
   content: "";
@@ -121,11 +178,11 @@ time, mark, audio, video {
 .futurama-inset {
   width: 440px;
   height: 140px;
-  border: 3px solid fuchsia;
+  border: 3px solid #fff;
   position: relative;
   top: 180px;
   z-index: 999;
-  padding: 10px; }
+  padding: 20px; }
 
 .spark-inset {
   top: 0px;
@@ -138,24 +195,43 @@ time, mark, audio, video {
   background: #369; }
 
 .futurama-inset {
-  background-color: tomato; }
+  background-color: purple; }
 
-body {
-  font-family: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
-  font-size: 1.35rem; }
-
-h1 {
-  color: purple;
-  font-size: 2rem; }
-
-.navbar li {
-  padding: 5px;
-  margin: 5px; }
+.score, .likes {
+  display: inline-block;
+  margin: 20px; }
 
 .content {
-  color: #fff; }
+  color: #fff;
+  margin: 0 auto; }
 
-.navbar {
-  color: tomato; }
+.button {
+  color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 25%;
+  border: 3px solid #fff;
+  background-color: inherit;
+  position: relative;
+  left: 40px;
+  font-size: 1.25rem; }
+  .button:hover {
+    height: 45px;
+    width: 90px; }
+
+footer {
+  background: #000;
+  color: lightblue;
+  padding: 20px;
+  width: 480px; }
+  @media screen and (min-width: 1000px) {
+    footer {
+      width: 960px; } }
+  footer #copyright {
+    margin-top: 10px; }
+    @media screen and (min-width: 1000px) {
+      footer #copyright {
+        display: inline-block;
+        padding-top: 15px; } }
 
 /*# sourceMappingURL=styles.css.map */

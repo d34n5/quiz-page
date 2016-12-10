@@ -1,0 +1,17 @@
+
+.button {
+  color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 25%;
+  border: 3px solid $white;
+  background-color: inherit;
+  position: relative;
+  left: 40px;
+  font-size: 1.25rem;
+
+  &:hover {
+    height: 45px;
+    width: 90px;
+  }
+}

@@ -1,0 +1,17 @@
+footer {
+  background: $black;
+  color: lightblue;
+  padding: 20px;
+  width: 480px;
+  @media screen and (min-width: 1000px) {
+    width: 960px;
+  }
+  #copyright {
+    margin-top: 10px;
+    @media screen and (min-width: 1000px) {
+      display: inline-block;
+      padding-top: 15px;
+
+    }
+  }
+}
