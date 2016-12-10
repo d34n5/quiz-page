@@ -1,15 +1,13 @@
 
 $font-stack: "Helvetica Nueue", "Helvetica", Arial, sans-serif;
 
-$white: #fff;
-$black: #000;
-$grey: #ccc;
+$white: #F8F8F8;
+$black: #101004;
+$grey: #c6c6c6;
 $sass-blue: #369;
-$green: green;
-$yellow: yellow;
-$red: tomato;
-$background: #eee;
-
+$green: #37770E;
+$yellow: #F0ED1D;
+$red: #A32006;
 
 body {
   @include linear-gradient(315deg, yellow, lavender);

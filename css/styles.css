@@ -50,6 +50,10 @@ h2 {
 h5 {
   font-size: 1rem; }
 
+.title {
+  display: inline-block;
+  padding: 15px; }
+
 .navbar {
   color: tomato;
   max-width: 480px;
@@ -66,34 +70,37 @@ h5 {
   padding: 5px;
   margin: 5px 90px;
   max-width: 250px; }
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 490px) {
     .navbar li {
       display: inline-block;
-      background: #000;
+      background: #101004;
       color: white;
       border-radius: 5px;
       padding: 10px;
       margin: 5px 10px;
-      border: 3px soild #fff; } }
+      border: 3px soild #F8F8F8; } }
   .navbar li:hover {
-    border: 3px solid #000;
-    background: #fff;
-    color: #000; }
+    border: 3px solid #101004;
+    background: #F8F8F8;
+    color: #101004; }
 
-.title {
-  display: inline-block;
-  padding: 15px; }
+.container {
+  max-width: 970px; }
 
 .content {
-  color: #fff;
+  color: #F8F8F8;
   text-shadow: 1px 1px .5px black; }
   .content::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 1000px) {
+    .content {
+      display: block;
+      margin: 0 auto; } }
 
 .south-park-tile {
-  background-color: green;
+  background-color: #37770E;
   height: 360px;
   width: 480px;
   padding: 20px;
@@ -101,12 +108,12 @@ h5 {
   margin: 0 auto;
   position: relative; }
   .south-park-tile:hover {
-    background: #00e600; }
+    background: #61d219; }
   @media screen and (min-width: 1000px) {
     .south-park-tile {
       float: left; } }
 
-.south-park-tile::after, .futurama-tile::after, .archer-tile::after {
+.south-park-tile::after, .simpsons-tile::after, .futurama-tile::after, .archer-tile::after {
   content: "";
   background-image: url("../img/spark.jpg");
   background-size: cover;
@@ -121,7 +128,7 @@ h5 {
   z-index: 1; }
 
 .simpsons-tile {
-  background-color: yellow;
+  background-color: #F0ED1D;
   height: 360px;
   width: 480px;
   padding: 20px;
@@ -129,7 +136,7 @@ h5 {
   margin: 0 auto;
   position: relative; }
   .simpsons-tile:hover {
-    background: #ffff99; }
+    background: #faf8ac; }
   @media screen and (min-width: 1000px) {
     .simpsons-tile {
       float: left; } }
@@ -137,16 +144,7 @@ h5 {
 .simpsons-tile::after {
   content: "";
   background: url("../img/simpsons.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1; }
+  background-size: cover; }
 
 .futurama-tile {
   background-color: purple;
@@ -190,7 +188,7 @@ h5 {
 .futurama-inset {
   width: 440px;
   height: 140px;
-  border: 3px solid #fff;
+  border: 3px solid #F8F8F8;
   position: relative;
   top: 180px;
   z-index: 999;
@@ -198,7 +196,7 @@ h5 {
 
 .spark-inset {
   top: 0px;
-  background: green; }
+  background: #37770E; }
 
 .simpsons-inset {
   background: orange; }
@@ -218,14 +216,19 @@ h5 {
   height: 40px;
   width: 80px;
   border-radius: 25%;
-  border: 3px solid #fff;
+  border: 3px solid #F8F8F8;
   background-color: inherit;
   position: relative;
   left: 40px;
   font-size: 1.25rem; }
   .button:hover {
-    height: 45px;
-    width: 90px; }
+    color: #ffff66;
+    height: 42px;
+    width: 83px; }
+
+.container, footer {
+  display: block;
+  margin: 0 auto; }
 
 header, .navbar li {
   text-align: center; }
@@ -233,12 +236,10 @@ header, .navbar li {
 footer {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: #000;
+  background: #101004;
   color: lightblue;
   padding: 10px 25px;
   width: 480px;
-  display: block;
-  margin: 0 auto;
   margin-bottom: 3px; }
   @media screen and (min-width: 1000px) {
     footer {

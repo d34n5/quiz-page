@@ -1,8 +1,17 @@
 
+.container {
+  max-width: 970px;
+  @extend %center;
+}
+
 .content {
   @include clearfix;
   color: $white;
   text-shadow: 1px 1px .5px black;
+  @media screen and(min-width: 1000px) {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .south-park-tile {
@@ -45,18 +54,10 @@
 }
 
 .simpsons-tile::after {
+  @extend .south-park-tile::after;
   content: "";
   background: url("../img/simpsons.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;
 }
 
 .futurama-tile {

@@ -1,11 +1,10 @@
 footer {
   @include border-bottom-radius(10px);
+  @extend %center;
   background: $black;
   color: lightblue;
   padding: 10px 25px;
   width: 480px;
-  display: block;
-  margin: 0 auto;
   margin-bottom: 3px;
   @media screen and (min-width: 1000px) {
     @include clearfix;

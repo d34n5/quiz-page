@@ -1,6 +1,11 @@
 
 header {
-   @extend %centered;
+   @extend %text-center;
+}
+
+.title {
+  display: inline-block;
+  padding: 15px;
 }
 
 .navbar {
@@ -17,11 +22,11 @@ header {
 }
 
 .navbar li {
-  @extend %centered;
+  @extend %text-center;
   padding: 5px;
   margin: 5px 90px;
   max-width: 250px;
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 490px) {
     display: inline-block;
     background: $black;
     color: white;
@@ -35,9 +40,4 @@ header {
     background: $white;
     color: $black;
   }
-}
-
-.title {
-  display: inline-block;
-  padding: 15px;
 }

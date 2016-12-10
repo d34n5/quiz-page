@@ -5,12 +5,13 @@
   width: 80px;
   border-radius: 25%;
   border: 3px solid $white;
+  &:hover {
+    color: lighten(yellow, 20%);
+    height: 42px;
+    width: 83px;
+  }
   background-color: inherit;
   position: relative;
   left: 40px;
   font-size: 1.25rem;
-  &:hover {
-    height: 45px;
-    width: 90px;
-  }
 }
