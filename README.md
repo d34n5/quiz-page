@@ -9,7 +9,7 @@
 ### Week 3 CSS Independent Project by Dean Scelza @ Epicodus, 12-9-16 ###
 
 #### Description & Technologies Used ####
-This single page quiz card web app challenges users to test their knowledge in some arcane subjects.
+This single page quiz app challenges users to test their knowledge on sassy animated TV shows.
 Focus on Sass nesting, variables and media queries.
 Also uses Bourbon mixins, extends and functions.
 
